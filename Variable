@@ -1,0 +1,33 @@
+In C#, every variable has the specifit structure, the structure decides the RAM and the layout. The range can be stored in the RAM, also can
+do some operation for variable.
+
+C# can define other variables, like enum, also allow it defines other variable types, like class. 
+The gramma for difining the variable:
+<data_type> <variable_list>;
+
+the Variable intialization
+variable_name = value;
+for instance:
+
+
+using System;
+
+namespace VariableDefinition
+{
+    class program
+    {
+        static void Main(String[] args)
+        {
+            short a;
+            int b;
+            double c;
+
+            a = 10;
+            b = 20;
+            c = a + b;
+            Console.WriteLine("a = {0}, b = {1}, c ={2}, a, b, c);
+            Console.ReadLine();
+        }
+    }
+}
+
