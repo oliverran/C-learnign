@@ -1,0 +1,50 @@
+Type conversion can also say as the type casting, or can saying transform the data from one type to another type. In C#, type casting have 
+two forms:
+  explicit type conversion - these type is the safety cnvertion in C#, and it would not caused the data loss. For example, from the small integer
+  to the big integer, from the derived class to the base class.
+  display conversion - display conversion also called mandatory class. Display need mandatory transform operator, and the mandatory operator
+  will caused the data loss.
+  
+For example:
+  using System;
+
+namespace TypeConversionApplication
+{
+    class ExplicitConversion
+{
+    static void Main(string[] args)
+        {
+            double d = 5673.74;
+            int i;
+    // change double to int
+    i = (int) d;
+    Console.WriteLine(i);
+    Console.ReadKey();
+        }
+    }
+}
+
+From different value to String type:
+
+using System;
+
+namespace TypeConversionApplication
+{
+    class StringConversion
+    {
+        static void Main(string[] args)
+        {
+            int i = 75;
+            float f = 53.005f;
+            double d = 2345.7654;
+            bool b = true;
+
+            Console.WriteLine(i.ToString());
+            Console.WriteLine(f.ToString());
+            Console.WriteLine(d.ToString());
+            Console.WriteLine(b.ToString());
+            Console.ReadKey();
+        }
+    }
+}
+
