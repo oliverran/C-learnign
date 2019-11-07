@@ -1,0 +1,57 @@
+In C#, there are three data tpyes:
+1. Value types
+2. Reference types
+3. Pointer types
+
+Value types
+Can give the value directly, they are come from System.ValueType
+if people want get the correct size of value or type, can use sizeof. For example:
+
+   namespace DataTypeApplication
+{
+    class program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Size of int:{0}", sizeof(int));
+            Console.ReadLine();
+        }
+    }
+}
+
+Reference types
+reference not included the actual data, but they included the reference for values. In another word, they are a location for RAM. When using
+mutiple values, the reference types can point to a RAM location. If the RAM location changed by a value, other values can show this changing
+automaticly. Bulid-in value have: object, dynamica and string
+
+Object type
+Object type is the base type in C# commmon type system -CTS for all data types. Object is anther name for system.object. So the object can distribute
+the value by other types. However,we need to do the type transform first before the value distribution.
+when the value type transform to the object value, it called Packing, and when the object value transfored to the value type, it called unboxing.
+
+  object obj:
+  object = 100; // this is the packing
+  
+Dynamic type
+  the dynamcic type can store any value inside, and these value are checking when it running
+  the grammar for static the dynamic type:
+  dynamic <varible_name> = value;
+  
+  for example:
+  dynamicd d = 20;
+  
+String type
+  String type allow people give any string value for values. String structure is anotehr name for system.String. It comes from the Object type
+  String value can distribute for two forms --- quotation marks and @quotation marksw
+    for example:
+    String str = "runoob.com";
+    
+Pointer type
+the pointer types stored another RAM address.
+
+The gramma for indentify the pointer type:
+type * identifier;
+
+for example:
+char* cpter;
+int* iptr;
